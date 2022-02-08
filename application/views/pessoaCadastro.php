@@ -2,25 +2,25 @@
 <h1>Cadastro de Pessoa</h1>
 <?php echo form_open('pessoa/inserir'); ?>
 <input class="form-control" type="text" required name="nome" placeholder="Nome aqui..." />
-<br><br>
+<br>
 <input class="form-control" type="text" required name="telefone" placeholder="Telefone aqui..." />
-<br><br>
+<br>
 <input class="form-control" type="email" required name="email" placeholder="E-mail aqui..." />
-<br><br>
+<br>
 <input class="form-control" type="text" required name="endereco" placeholder="Endereço aqui..." />
-<br><br>
+<br>
 <input class="form-check-inline" type="radio" required name="tpPessoa" value="Fisica"/>Fisíca 
 <input class="form-check-inline" type="radio" required name="tpPessoa" value="Juridica" />Jurídica
-<br><br>
+<br>
 <input class="form-control" type="number" name="cpf" placeholder="CPF aqui..." />
-<br><br>
+<br>
 <input class="form-check-inline" type="radio" name="sexo" value="F"/>Feminino 
 <input class="form-check-inline" type="radio" name="sexo" value="M" />Masculino
-<br><br>
+<br>
 <input class="form-control" type="number" name="cnpj" placeholder="CNPJ aqui..." />
-<br><br>
+<br>
 <input class="form-control" type="text" name="nomeFantasia" placeholder="Nome Fantasia aqui..." />
-<br><br>
+<br>
 <input class="btn btn-outline-success" type="submit" value="Salvar"/>
 <input class="btn btn-outline-danger" type="reset" value="Limpar"/>
 <?php echo form_close(); ?>

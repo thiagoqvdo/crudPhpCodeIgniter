@@ -45,7 +45,9 @@ class Pessoa extends CI_Controller {
 
     public function editar($id) {
         $dados['pessoa'] = $this->pessoa->editar($id);
+        $this->load->view('template/header');
         $this->load->view('pessoaEditar', $dados);
+        $this->load->view('template/footer');
     }
 
     public function atualizar() {
@@ -79,6 +81,10 @@ class Pessoa extends CI_Controller {
         } else {
             redirect('pessoa');
         }
+    }
+
+    public function findByCpfCnpj($cpfCnpj) {
+        
     }
 
 }

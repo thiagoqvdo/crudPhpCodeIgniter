@@ -13,17 +13,17 @@ and open the template in the editor.
         <a href="<?php echo base_url() . 'home'; ?>">Home</a>
         <h1>Cadastro de Usuário</h1>
         <?php echo form_open('usuario/inserir'); ?>
-            <input type="text" required name="nomeUsuario" placeholder="Nome aqui..." />
-            <br><br>
-            <input type="text" required name="user" placeholder="User aqui..." />
-            <br><br>
-            <input type="password" required name="senha" placeholder="Senha aqui..." />
-            <br><br>
-            <input type="radio" required name="perfilAcesso" value="admin"/>Administrador 
-            <input type="radio" required name="perfilAcesso" value="user" />Usuário
-            <br><br>
-            <input type="submit" value="Salvar"/>
-            <input type="reset" value="Limpar"/>
+            <input class="form-control" type="text" required name="nomeUsuario" placeholder="Nome aqui..." />
+            <br>
+            <input class="form-control" type="text" required name="user" placeholder="User aqui..." />
+            <br>
+            <input class="form-control" type="password" required name="senha" placeholder="Senha aqui..." />
+            <br>
+            <input class="form-check-inline" type="radio" required name="perfilAcesso" value="admin"/>Administrador 
+            <input class="form-check-inline" type="radio" required name="perfilAcesso" value="user" />Usuário
+            <br>
+            <input class="btn btn-outline-success" type="submit" value="Salvar"/>
+            <input class="btn btn-outline-danger" type="reset" value="Limpar"/>
         <?php echo form_close(); ?>
         <h2>Lista Usuários</h2>
         <table>

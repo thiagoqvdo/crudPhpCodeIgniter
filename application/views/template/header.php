@@ -18,6 +18,7 @@
                 <a href="<?php echo base_url(); ?>login/sair">Sair</a> | 
                 <a href="<?php echo base_url() . 'home'; ?>">Home</a> | 
                 <a href="<?php echo base_url(); ?>pessoa">Pessoa</a> | 
-                <a href="<?php echo base_url(); ?>usuario">Usuário</a>
+                <a href="<?php echo base_url(); ?>usuario">Usuário</a> |
+                <a href="<?php echo base_url(); ?>carro">Carro</a>
             <?php }
             ?>
